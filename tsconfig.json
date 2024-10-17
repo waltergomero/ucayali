@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/common/loader/index.js", "components/ui/sidebar/sidebarDropdown.js", "components/ui/sidebar/sidebarItem.js", "components/ui/sidebar/index.js", "components/ui/clickOutside.js", "app/(admin)/dashboard/layout.js", "app/(admin)/dashboard/page.js", "components/ui/layout/adminLayout.js", "components/ui/header/index.js", "components/ui/header/dropdownUser.js", "components/ui/header/dropdownNotification.js", "components/ui/header/dropdownMessage.js", "components/ui/header/darkModeSwitcher.js", "hooks/useColorMode.js", "hooks/useLocalStorage.js"],
+  "exclude": ["node_modules"]
+}
