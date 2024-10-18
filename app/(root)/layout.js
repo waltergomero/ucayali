@@ -6,8 +6,9 @@ import "flatpickr/dist/flatpickr.min.css"
 import "@/css/satoshi.css"
 import "@/css/style.css"
 import Loader from "@/components/common/loader";
-import Navbar from "@/components/ui/navbar";
+import Navbar from "@/components/ui/navbar/index";
 import Footer from "@/components/ui/footer";
+import AuthProvider from '@/components/auth/AuthProvider';
 
 
 // export const metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
   }, [])
 
   return (
+    <AuthProvider>
     <html lang="en">
       <body suppressHydrationWarning={true}>
         <div className="flex flex-col min-h-screen">
@@ -39,5 +41,6 @@ export default function RootLayout({ children }) {
        
       </body>
     </html>
+    </AuthProvider>
   );
 }
